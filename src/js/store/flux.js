@@ -1,7 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			demo: [
+			planets: [
 				{
 					title: "FIRST",
 					background: "white",
@@ -20,9 +20,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				getActions().changeColor(0, "green");
 			},
 			getPlanets: () => {
-                fetch("https://swapi.dev/api/planets/")
-                    .then(res => res.json())
-                    .then(data => setStore({ planets: data.results }));
+				fetch("https://swapi.dev/api/planets/")
+					.then(res => res.json())
+					.then(data => setStore({ planets: data.results }));
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 //import { Characters } from "../component/characters.js";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
@@ -7,12 +7,12 @@ import { Row } from "../component/row";
 import { Navbar } from "../component/navbar.js";
 
 export const Home = () => {
-    const { store, actions } = useContext(Context);
-    return (
-        <div className=“container mt-5">
-            <Row title=“Planets” data={store.planets} />
-        </div>
-    );
+	const { store, actions } = useContext(Context);
+	return (
+		<div className="container mt-5">
+			<Row title="Planets" data={store.planets} />
+		</div>
+	);
 };
 // export function Home() {
 // 	let characters = [
@@ -46,27 +46,27 @@ export const Home = () => {
 // 		}
 // 	];
 
-	// return (
-	// 	<div className="nav-bar">
-	// 		{/* <Navbar brand={navbar.text} /> */}
-	// 		<div className="container">
-	// 			<div className="card-deck">
-	// 				{characters.map((card, index) => {
-	// 					return (
-	// 						<Characters
-	// 							key={index}
-	// 							image={card.image}
-	// 							title={card.title}
-	// 							body={card.body}
-	// 							buttonText={card.buttonText}
-	// 							url={card.url}
-	// 						/>
-	// 					);
-	// 				})}
-	// 			</div>
-	// 			);
-	// 		</div>
-	// 	</div>
+// return (
+// 	<div className="nav-bar">
+// 		{/* <Navbar brand={navbar.text} /> */}
+// 		<div className="container">
+// 			<div className="card-deck">
+// 				{characters.map((card, index) => {
+// 					return (
+// 						<Characters
+// 							key={index}
+// 							image={card.image}
+// 							title={card.title}
+// 							body={card.body}
+// 							buttonText={card.buttonText}
+// 							url={card.url}
+// 						/>
+// 					);
+// 				})}
+// 			</div>
+// 			);
+// 		</div>
+// 	</div>
 // 	return (
 // 		<div className="container-fluid">
 // 			<div className="row">
