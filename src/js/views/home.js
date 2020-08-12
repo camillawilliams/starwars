@@ -11,6 +11,7 @@ export const Home = () => {
 	return (
 		<div className="container mt-5">
 			<Row title="Planets" data={store.planets} />
+			<Row title="People" data={store.people} />
 		</div>
 	);
 };

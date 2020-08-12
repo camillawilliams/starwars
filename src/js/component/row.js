@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 
 export const Row = props => {
-	const { title, data } = props;
+	const { title, data } = props; //=properties/ data that is passed through components
 	const { store, actions } = useContext(Context);
 	const makeColumns = () => {
 		return data.map((item, index) => {
